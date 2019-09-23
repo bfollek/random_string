@@ -8,5 +8,5 @@ class RandomString:
     """
 
     @staticmethod
-    def make(size=32, chars=string.ascii_uppercase + string.digits):
+    def make(size: int = 32, chars: str = string.ascii_uppercase + string.digits) -> str:
         return "".join(random.choice(chars) for x in range(size))
